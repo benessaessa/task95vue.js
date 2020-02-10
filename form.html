@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/img.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>نموذج طلب المنتج</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="py-2">
+            <ul class="nav">
+                <li class="nav-item dropdown" dir="rtl">
+                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false"> اللغة العربية &nbsp;</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">German</a>
+                        <a class="dropdown-item" href="#">French</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-whatsapp text-white"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter text-white"></i></a>
+                </li>
+            </ul>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white pb-0 border-bottom" dir="rtl">
+            <a class="navbar-brand ml-auto" href="#"><img src="images/logo.PNG" width="100%" height="auto" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">منتجاتنا</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">مقياس الإستخدامة المالية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">حول المقياس</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الأسئلة الشائعة</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto" dir="ltr">
+                    <li class="nav-item login">
+                        <a class="nav-link text-white" href="#">تسجيل الدخول</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="pt-2" src="images/img.PNG"></a>
+                    </li>
+                    <li class="nav-item border-left border-right">
+                        <a class="nav-link" href="#"><i class="fa fa-search pl-3 pt-4"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+        <!-- End of Header -->
+        <h2 class="text-center font-weight-bold py-5"> "نموذج طلب المنتج "  هندسة الموسم  </h2>
+        
+
+        <!-- Form -->
+        <div class="container" id="app">
+            <form class="product pb-5">
+                <div class="firstDiv">
+                    <h5 class="text-center textData"> بيانات المنظمة </h5>
+                    <div class="row justify-content-around pt-4" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right">اسم المنظمة *</label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right">نشاط المنظمة *</label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around pt-1" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right"> المنطقة </label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right"> المركز / المحافظة </label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="text-center textData pt-4">الباقة المطلوبة</h5>
+                    <div class="row justify-content-around" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="float-right">اسم المنظمة *</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option selected></option>
+                                    <option>منظمة 1 </option>
+                                    <option>منظمة 2 </option>
+                                    <option>منظمة 3 </option>
+                                    <option>منظمة 4 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6"></div>
+                    </div>
+                    <div class="row justify-content-center pt-4">
+                        <div class="col-lg-6 col-md-8 col-sm-12">
+                            <a class="btn btn-block text-white btnNext" id="btnNext">التالي</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextDiv">
+                    <h5 class="text-center textData">بيانات المسؤلين</h5>
+                    <div class="row justify-content-around pt-4" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right">اسم المسؤل *</label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right">منصبه *</label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect2" class="float-right">رقم الجوال *</label>
+                                <input class="form-control" type="number" id="exampleFormControlSelect2">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6"></div>
+                    </div>
+                    <div class="row justify-content-around pt-1" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right"> اسم المفوض بالتواصل  </label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right"> منصبه </label>
+                                <input type="text"required class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around pt-1" dir="rtl">
+                        <div class="col-lg-5 col-md-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right"> رقم الجوال  </label>
+                                <input type="number" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="form-group">
+                                <label  class="float-right"> البريد الإلكتروني </label>
+                                <input type="email" class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-lg-11 col-md-11">
+                            <label  class="float-right"> ملاحظات  </label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pt-4">
+                        <div class="col-lg-6 col-md-8 col-sm-12">
+                            <button class="btn btn-block text-white btnNext">طلب المنتج</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pt-4">
+                        <div class="col-lg-6 col-md-8 col-sm-12">
+                            <a class="btn btn-block text-white btnNext" id="btnBack">السابق</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/file.js"></script>
+    <script>
+        var app = new Vue({
+        el: '#app',
+        data: {
+        }
+        })
+    </script>
+</body>
+
+</html>

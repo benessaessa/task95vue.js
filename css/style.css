@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Dinnextl";
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    src: url("./fonts/DINNEXTLTARABIC-LIGHT-1.ttf");
+    src: local("Dinnextl"), url("./fonts/DINNEXTLTARABIC-LIGHT-1.ttf") format("ttf"),
+}
+
+.navbar-nav .nav-item .nav-link{
+  font-family: "Dinnextl";
+  padding-right: 2rem;
+  padding-left: 1rem;
+  font-weight: 500;
+}
+
+header{
+  background-color: #0d2e75;
+}
+.textData{
+    color: #6cc0e2;
+}
+
+.login{
+  background-color: #65bde1;
+}
+
+.product label{
+  color: #B4B4B4;
+  font-weight: bold;
+}
+
+.btnNext{
+  background-color: #65bde1;
+}
+.btnNext:hover{
+  opacity: 0.8;
+}
+
+.nextDiv{
+  display: none;
+}
+
+@media screen and (min-width:1024px){
+  .navbar{
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+  .login .nav-link{
+    padding: 1.7rem;
+  }
+}
+@media screen and (max-width:450px){
+  .navbar{
+    padding-right: 0px;
+  }
+}
